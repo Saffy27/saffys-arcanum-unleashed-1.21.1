@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "saffys-arcanum-unleashed",
+	"version": "${version}",
+	"name": "Saffy's Arcanum Unleashed",
+	"description": "Explore a world of dark fantasy with incredible visuals.",
+	"authors": [
+		"Saffy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/saffys-arcanum-unleashed/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.saffy.sau.SaffysArcanumUnleashed"
+		],
+		"fabric-datagen": [
+			"com.saffy.sau.SaffysArcanumUnleashedDataGenerator"
+		],
+      "client": [
+        "com.saffy.sau.SaffysArcanumUnleashedClient"
+      ]
+	},
+	"mixins": [
+		"saffys-arcanum-unleashed.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
